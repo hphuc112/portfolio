@@ -1,0 +1,45 @@
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 150px 10% 20px 10%;
+    position: relative;
+    max-width: 900px;
+    padding-bottom: 321px;
+}
+.profile-basic-info{
+    width: 50%;
+}
+.profile-basic-info img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+.profile-basic-info img:hover{
+    filter: blur(1px);
+}
+.my-profile-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-filter: blur(3px);
+    filter: blur(8px);
+}
+.tech-use img{
+    width: 30px;
+    height: 30px;
+}
+.tech-use{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.tech-use img{
+    transition: 0.5s;
+}
+.tech-use img:hover{
+    transform: translateY(-5px);
+}
