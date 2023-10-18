@@ -21,7 +21,7 @@
 }
 .portfolio-project1 .scroll-img-container{
     transition: ease-in-out 3s;
-    background: url(img/projects-preview-test.png);
+    background-image: url(https://github.com/hphuc112/portfolio/blob/master/img/projects-preview-test.png?raw=true);
     background-size: cover ;
     background-position: top;
 }
