@@ -1,10 +1,11 @@
 .contact{
-    background-image: linear-gradient(rgb(255, 234, 234), rgb(255, 244, 244));
+/*    background-image: linear-gradient(rgb(255, 234, 234), rgb(255, 244, 244));
+*/
 }
 
 .footer{
     position: absolute;
-    background-color: rgb(110, 110, 110);
+    background-image: linear-gradient(rgba(205, 204, 204, 0.5), rgba(119, 74, 74, 0.5));
     width: 100%;
     height: 150px;
     left: 0;
@@ -13,4 +14,15 @@
 }
 .footer h3{
     text-align: center;
+}
+.contact-details img{
+    width: 30px;
+    length: 30px;
+    object-fit: cover;
+    margin: 0px 10px;
+}
+.contact-details{
+    display: flex;
+    background-image: linear-gradient(rgba(201, 184, 184, 0.252), rgb(230, 228, 228, 0.5));
+    padding: 10px 10px;
 }
