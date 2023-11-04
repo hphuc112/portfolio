@@ -52,8 +52,13 @@
     margin-top: 25px;
     border: 5px solid rgb(195, 190, 190, 0.5);
     padding: 5px 5px;
+    border-radius: 12px;
+    height: 20px;
 }
 .github-code-demo a:hover{
     color: rgb(16, 191, 135);
     transition: 0.4s;
+    background-color: rgba(210, 209, 209, 0.4);
+    border-radius: 5px;
+    padding: 2px 0px;
 }

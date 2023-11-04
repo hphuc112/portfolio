@@ -12,3 +12,8 @@ a{
     max-width: 900px;
     
 }
+p{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(125, 124, 124); 
+}
