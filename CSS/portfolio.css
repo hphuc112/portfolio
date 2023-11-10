@@ -21,7 +21,7 @@
 }
 .portfolio-project1 .scroll-img-container{
     transition: ease-in-out 3s;
-    background-image: url(https://github.com/hphuc112/portfolio/blob/master/img/projects-preview-test.png?raw=true);
+    background-image: url(https://raw.githubusercontent.com/hphuc112/portfolio/master/img/12merch-screenshot.png);
     background-size: cover ;
     background-position: top;
 }
@@ -47,7 +47,7 @@
 .github-code-demo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around   ;
     column-gap: 10%;
     margin-top: 25px;
     border: 5px solid rgb(195, 190, 190, 0.5);
