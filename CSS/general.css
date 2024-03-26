@@ -9,7 +9,8 @@ a {
 }
 .main-container {
   margin: auto;
-  max-width: 900px;
+  max-width: 80%;
+  min-width: 500px;
 }
 p {
   text-decoration: none;

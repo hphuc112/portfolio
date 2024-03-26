@@ -20,7 +20,12 @@
   display: flex;
   flex-direction: column;
   width: 40%;
+  background-image: linear-gradient(rgb(248, 236, 224), rgb(255, 234, 234));
+  border-radius: 20px;
+  padding: 20px 10px;
+  box-shadow: 3px 3px 3px rgb(118, 114, 114, 0.1);
 }
+
 .portfolio-project1 .scroll-img-container {
   transition: ease-in-out 3s;
   background-image: url(https://raw.githubusercontent.com/hphuc112/portfolio/master/img/12merch-screenshot.png);
@@ -45,22 +50,13 @@
   border-radius: 20px;
   box-shadow: 3px 3px 3px rgb(26, 25, 25, 0.1);
   margin: 5px 0px;
+  transition: 500ms;
 }
-.github-code-demo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  column-gap: 10%;
-  margin-top: 25px;
-  border: 5px solid rgb(195, 190, 190, 0.5);
-  padding: 5px 5px;
-  border-radius: 12px;
-  height: 20px;
+.portfolio-project1-rightside-techbutton button:hover {
+  transition: 500ms;
+  background-color: rgba(151, 115, 115, 0.2);
 }
-.github-code-demo a:hover {
-  color: rgb(16, 191, 135);
-  transition: 0.4s;
-  background-color: rgba(210, 209, 209, 0.4);
-  border-radius: 5px;
-  padding: 2px 0px;
+.portfolio-project1-rightside-techbutton button a:hover {
+  color: rgb(168, 152, 152);
+  transition: 500ms;
 }
