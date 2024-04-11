@@ -4,7 +4,7 @@
 .portfolio-project1,
 .portfolio-project2,
 .portfolio-project3 {
-  width: 92%;
+  width: 88%;
   height: 300px;
   background-color: rgb(248, 236, 224);
   margin: 20px 0;
@@ -32,7 +32,15 @@
   background-size: cover;
   background-position: top;
 }
-.portfolio-project1 .scroll-img-container:hover {
+.portfolio-project1 .scroll-img-container2 {
+  transition: ease-in-out 3s;
+  background-image: url(https://cdn.discordapp.com/attachments/1121995368259924030/1227846531172925470/minesweeper-review.png?ex=6629e431&is=66176f31&hm=2244a06ef519f4054a21e3f6cadc9f62fc26f526fff9c316469787a4d3656677&);
+  background-size: cover;
+  background-position: top;
+}
+
+.portfolio-project1 .scroll-img-container:hover,
+.portfolio-project1 .scroll-img-container2:hover {
   background-position: bottom;
 }
 .portfolio-project1-rightside-techbutton {
