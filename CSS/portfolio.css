@@ -34,7 +34,7 @@
 }
 .portfolio-project1 .scroll-img-container2 {
   transition: ease-in-out 3s;
-  background-image: url(https://cdn.discordapp.com/attachments/1121995368259924030/1227846531172925470/minesweeper-review.png?ex=6629e431&is=66176f31&hm=2244a06ef519f4054a21e3f6cadc9f62fc26f526fff9c316469787a4d3656677&);
+  background-image: url(https://raw.githubusercontent.com/hphuc112/portfolio/master/img/minesweeper-review.png);
   background-size: cover;
   background-position: top;
 }
