@@ -1,0 +1,129 @@
+/* sections/about.css - About section styles */
+
+.about {
+  margin: var(--spacing-xl) 0;
+}
+
+.about__container {
+  display: flex;
+  background-image: linear-gradient(
+    var(--color-background-pink),
+    var(--color-background-light)
+  );
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xl) var(--spacing-md);
+  border-radius: var(--radius-lg);
+}
+
+.about__image-wrapper {
+  position: relative;
+  margin-right: var(--spacing-xl);
+}
+
+.about__image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.about__rotation-element {
+  background-color: var(--color-background-light);
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  border-radius: 50%;
+}
+
+.about__profile-rotation {
+  position: absolute;
+  top: 71%;
+  right: 6.5%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: rotation 7s infinite linear;
+}
+
+.about__content {
+  flex: 1;
+}
+
+.section-tag {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: var(--font-2xl);
+  display: inline-block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.about__title {
+  font-size: var(--font-xl);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-md);
+}
+
+.about__description {
+  color: var(--color-text);
+}
+
+.about__description p {
+  margin-bottom: var(--spacing-md);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .about__image-wrapper {
+    margin-right: 0;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .about__image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about__description p {
+    font-size: var(--font-md);
+  }
+
+  .about__title {
+    font-size: var(--font-lg);
+  }
+
+  .section-tag {
+    font-size: var(--font-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .about__description {
+    font-size: var(--font-sm);
+  }
+
+  .about__title {
+    font-size: var(--font-md);
+  }
+
+  .section-tag {
+    font-size: var(--font-lg);
+  }
+}

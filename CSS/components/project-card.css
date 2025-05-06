@@ -1,0 +1,145 @@
+/* components/project-card.css - Project card component styles */
+
+.project-card {
+  width: 100%;
+  background-color: var(--color-background-beige);
+  margin: var(--spacing-md) 0;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+}
+
+.project-card__image-container {
+  flex: 1;
+  height: 300px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.project-card__image {
+  width: 100%;
+  height: 100%;
+  transition: ease-in-out 3s;
+  background-size: cover;
+  background-position: top;
+}
+
+/* Project-specific background images */
+.project-card__image--minesweeper {
+  background-image: url(https://raw.githubusercontent.com/hphuc112/portfolio/master/img/minesweeper-review.png);
+}
+
+.project-card__image--merch {
+  background-image: url(https://raw.githubusercontent.com/hphuc112/portfolio/master/img/12merch-screenshot.png);
+}
+
+.project-card__image {
+  background-position: bottom;
+}
+
+.project-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    var(--color-background-beige),
+    var(--color-background-pink)
+  );
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: 3px 3px 3px rgba(118, 114, 114, 0.1);
+}
+
+.project-card__title {
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: var(--font-2xl);
+  margin: var(--spacing-xs) 0;
+}
+
+.project-card__description {
+  margin-bottom: var(--spacing-md);
+}
+
+.project-card__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5%;
+}
+
+.btn {
+  border: none;
+  min-width: 100px;
+  height: 50px;
+  font-weight: 800;
+  border-radius: var(--radius-lg);
+  box-shadow: 3px 3px 3px rgba(26, 25, 25, 0.1);
+  margin: 5px 0;
+  transition: var(--transition-medium);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-md);
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: white;
+  color: var(--color-text-light);
+}
+
+.btn--secondary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn {
+  background-color: rgba(151, 115, 115, 0.2);
+}
+
+.btn--primary {
+  color: var(--color-text);
+}
+
+.btn--secondary {
+  color: white;
+  background-color: rgba(5, 181, 181, 0.8);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    padding: var(--spacing-md);
+  }
+
+  .project-card__image-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .project-card__content {
+    width: 100%;
+  }
+
+  .project-card__title {
+    font-size: var(--font-xl);
+  }
+
+  .project-card__description {
+    font-size: var(--font-xs);
+  }
+
+  .btn {
+    min-width: 80px;
+    height: 40px;
+    font-size: var(--font-xs);
+  }
+}

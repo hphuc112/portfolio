@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Phuc Tran - Front-End Developer Portfolio"
+    />
     <title>Phuc Tran - Web Developer</title>
     <link rel="icon" href="img/title-icons.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,226 +15,261 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="CSS/footer.css" />
-    <link rel="stylesheet" href="CSS/nav-bar.css" />
-    <link rel="stylesheet" href="CSS/general.css" />
-    <link rel="stylesheet" href="CSS/profile.css" />
-    <link rel="stylesheet" href="CSS/about-me.css" />
-    <link rel="stylesheet" href="CSS/portfolio.css" />
-    <link rel="stylesheet" href="CSS/contact.css" />
+    <!-- All CSS files -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
-    <div class="nav-bar">
-      <a href="https://hphuc112.github.io/portfolio/">
-        <div class="nav-bar-leftside">
-          <h1>1</h1>
-          <h2>2huc</h2>
-        </div>
-      </a>
-      <div class="nav-bar-rightside">
-        <a href="https://hphuc112.github.io/portfolio/">Home</a>
-        <a href="https://hphuc112.github.io/portfolio/">About</a>
-        <a href="https://hphuc112.github.io/portfolio/">Projects</a>
-        <a href="contact.html" target="”_blank”">Contact</a>
+    <header class="navbar">
+      <div class="container navbar__container">
+        <a href="https://hphuc112.github.io/portfolio/" class="navbar__logo">
+          <div class="navbar__logo-text">
+            <span class="navbar__logo-number">1</span>
+            <span class="navbar__logo-name">2huc</span>
+          </div>
+        </a>
+        <nav class="navbar__nav">
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#home" class="navbar__link">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#projects" class="navbar__link">Projects</a>
+            </li>
+            <li class="navbar__item">
+              <a href="contact.html" class="navbar__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="main-container">
-      <div class="profile">
-        <div class="profile-basic-info">
-          <p class="profile-hello">HELLO, I'M PHUC TRAN</p>
-          <p>A Front-End Developer in Ho Chi Minh city.</p>
-          <a
-            href="https://www.linkedin.com/in/tranhoangphucttb/"
-            target="”_blank”"
-            ><img src="img/linkedin-icon.png" alt=""
-          /></a>
-          <a href="https://github.com/hphuc112" target="”_blank”"
-            ><img src="img/github-icon.png" alt=""
-          /></a>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <p class="hero__greeting">HELLO, I'M PHUC TRAN</p>
+            <h1 class="hero__title">
+              A Front-End Developer in Ho Chi Minh city.
+            </h1>
+            <div class="hero__social">
+              <a
+                href="https://www.linkedin.com/in/tranhoangphucttb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hero__social-link"
+              >
+                <img
+                  src="img/linkedin-icon.png"
+                  alt="LinkedIn"
+                  class="hero__social-icon"
+                />
+              </a>
+              <a
+                href="https://github.com/hphuc112"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hero__social-link"
+              >
+                <img
+                  src="img/github-icon.png"
+                  alt="GitHub"
+                  class="hero__social-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hero__image-container">
+            <img
+              src="img/my-profile-picture-2.jpg"
+              class="hero__image hero__image--front"
+              alt="Phuc Tran portrait"
+            />
+            <img
+              src="img/my-profile-picture.jpg"
+              class="hero__image hero__image--back"
+              alt="Phuc Tran portrait alternate"
+            />
+          </div>
         </div>
-        <button class="hover-me">HOVER ME!!!</button>
-        <div class="profile-picture-container">
-          <img src="img/my-profile-picture-2.jpg" class="my-profile-picture" />
-          <img src="img/my-profile-picture.jpg" class="my-profile-picture" />
+      </section>
 
-          <!-- <img src="img/my-profile-picture.jpg" class="my-profile-picture" /> -->
+      <!-- Tech Stack Section -->
+      <section class="tech-stack">
+        <div class="container tech-stack__container">
+          <h2 class="tech-stack__title">Tech stack</h2>
+          <div class="tech-stack__icons">
+            <img
+              src="img/html-5-icon.png"
+              alt="HTML5"
+              class="tech-stack__icon"
+            />
+            <img src="img/css-3-icon.png" alt="CSS3" class="tech-stack__icon" />
+            <img
+              src="img/js-icon.png"
+              alt="JavaScript"
+              class="tech-stack__icon"
+            />
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="tech-use">
-        <a>Tech stack</a>
-        <div>
-          <img src="img/html-5-icon.png" alt="" />
-          <img src="img/css-3-icon.png" alt="" />
-          <img src="img/js-icon.png" alt="" />
-        </div>
-      </div>
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container about__container">
+          <div class="about__image-wrapper">
+            <img
+              src="img/group-study-laptop.jpg"
+              alt="Group study with laptop"
+              class="about__image"
+            />
+            <div class="about__rotation-element"></div>
+            <img
+              src="img/THP-rotation.png"
+              class="about__profile-rotation"
+              alt="Phuc Tran"
+            />
+          </div>
 
-      <div class="about-me">
-        <div class="about-me-leftside">
-          <img src="img/group-study-laptop.jpg" alt="" />
-          <div class="about-me-rotation"></div>
-          <img
-            src="img/THP-rotation.png"
-            class="about-me-thp-rotation"
-            style="width: 120px; height: 120px; border-radius: 50%"
-          />
-        </div>
-
-        <div>
-          <p class="about-me-title">ABOUT ME</p>
-          <h2>A Front-End Developer in Ho Chi Minh city.</h2>
-          <p class="about-me-description">
-            Hi, I'm Tran Hoang Phuc, student in Computer Science Engineering.
-            I'm dedicated to create user-friendly and visually appealing web
-            experiences.
-          </p>
-          <p class="about-me-description">
-            I enjoy solving frontend related problems and love to work with
-            UI/UX design. I'm also usually curious about new technology and
-            spend time learning that.
-          </p>
-        </div>
-      </div>
-
-      <div class="portfolio">
-        <p
-          style="
-            color: rgb(5, 181, 181);
-            font-weight: 700;
-            font-size: 30px;
-            display: inline-block;
-            border-bottom: 2px solid rgb(5, 181, 181);
-            margin: 3px 0px;
-          "
-        >
-          PROJECTS
-        </p>
-
-        <div class="portfolio-project1">
-          <div
-            class="scroll-img-container"
-            style="
-              width: 45%;
-              height: 300px;
-              border-radius: 20px;
-              box-shadow: 5px 5px 8px rgb(99, 98, 98, 0.4);
-            "
-          ></div>
-          <div class="portfolio-project1-rightside">
-            <h3
-              style="
-                text-align: center;
-                color: rgb(125, 124, 124);
-                font-size: 30px;
-                margin: 3px 0px;
-              "
-            >
-              12merch
-            </h3>
-            <p style="text-align: center">
-              A merchandise website refers to a small business that allows users
-              to buy products on e-commerce platforms.
-            </p>
-            <div class="portfolio-project1-rightside-techbutton">
-              <button>
-                <a href="https://github.com/hphuc112/12merch" target="”_blank”"
-                  >Github Code</a
-                >
-              </button>
-              <button>
-                <a href="https://hphuc112.github.io/12merch/" target="”_blank”"
-                  >Demo</a
-                >
-              </button>
+          <div class="about__content">
+            <span class="section-tag">ABOUT ME</span>
+            <h2 class="about__title">
+              A Front-End Developer in Ho Chi Minh city.
+            </h2>
+            <div class="about__description">
+              <p>
+                Hi, I'm Tran Hoang Phuc, student in Computer Science
+                Engineering. I'm dedicated to create user-friendly and visually
+                appealing web experiences.
+              </p>
+              <p>
+                I enjoy solving frontend related problems and love to work with
+                UI/UX design. I'm also usually curious about new technology and
+                spend time learning that.
+              </p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="portfolio-project1">
-          <div
-            class="scroll-img-container2"
-            style="
-              width: 45%;
-              height: 300px;
-              border-radius: 20px;
-              box-shadow: 5px 5px 8px rgb(99, 98, 98, 0.4);
-            "
-          ></div>
-          <div class="portfolio-project1-rightside">
-            <h3
-              style="
-                text-align: center;
-                color: rgb(125, 124, 124);
-                font-size: 30px;
-                margin: 3px 0px;
-              "
-            >
-              Mini-project Minesweeper
-            </h3>
-            <p style="text-align: center">
-              The objective of the game is to clear a rectangular board
-              containing hidden "mines" or bombs without detonating any of them.
-            </p>
-            <div class="portfolio-project1-rightside-techbutton">
-              <button>
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container projects__container">
+          <span class="section-tag">PROJECTS</span>
+
+          <div class="project-card">
+            <div class="project-card__image-container">
+              <!-- Replace with actual project image -->
+              <div class="project-card__image"></div>
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Mini-project Minesweeper</h3>
+              <p class="project-card__description">
+                The objective of the game is to clear a rectangular board
+                containing hidden "mines" or bombs without detonating any of
+                them.
+              </p>
+              <div class="project-card__buttons">
                 <a
                   href="https://github.com/hphuc112/Minesweeper"
-                  target="”_blank”"
-                  >Github Code</a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--primary"
                 >
-              </button>
-              <button>
+                  Github Code
+                </a>
                 <a
                   href="https://hphuc112.github.io/Minesweeper/"
-                  target="”_blank”"
-                  >Demo</a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--secondary"
                 >
-              </button>
+                  Demo
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <div class="footer">
-      <div class="footer-getintouch">
-        <h1><a href="contact.html " target="”_blank”">GET IN TOUCH</a></h1>
-      </div>
-
-      <div class="footer-link">
-        <div class="footer-navigation">
-          <h3>NAVIGATION</h3>
-          <p>Home</p>
-          <p>About</p>
-          <p>Project</p>
-          <p>Contact</p>
-        </div>
-        <div class="footer-social">
-          <h3>SOCIALS</h3>
-          <p>Linkedin</p>
-          <p>Github</p>
-        </div>
-        <div class="footer-resources">
-          <h3>RESOURCES</h3>
-          <p>Portfolio</p>
-        </div>
-      </div>
-
-      <div class="footer-copyright">
-        <div>
-          <h1>© 2024</h1>
-          <h1>PHUC TRAN</h1>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__cta">
+          <h2 class="footer__cta-title">
+            <a href="contact.html" class="footer__cta-link">GET IN TOUCH</a>
+          </h2>
         </div>
 
-        <div>
-          <h3>LOCAL TIME</h3>
-          <p>GMT +7</p>
+        <div class="footer__links">
+          <div class="footer__column">
+            <h3 class="footer__heading">NAVIGATION</h3>
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a href="#home" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#about" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#projects" class="footer__link">Projects</a>
+              </li>
+              <li class="footer__item">
+                <a href="contact.html" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__heading">SOCIALS</h3>
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a
+                  href="https://www.linkedin.com/in/tranhoangphucttb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__link"
+                  >LinkedIn</a
+                >
+              </li>
+              <li class="footer__item">
+                <a
+                  href="https://github.com/hphuc112"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__link"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__heading">RESOURCES</h3>
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Portfolio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            <p>© 2024</p>
+            <p>PHUC TRAN</p>
+          </div>
+
+          <div class="footer__time">
+            <h3 class="footer__time-heading">LOCAL TIME</h3>
+            <p class="footer__time-zone">GMT +7</p>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

@@ -18,7 +18,7 @@
   margin-top: 10px;
 }
 .footer-getintouch:hover {
-  -webkit-filter: blur(2px);
+  -webkit-filter: blur(0.1px);
   transition: 300ms;
   cursor: pointer;
   background-color: rgba(114, 67, 67, 0.1);

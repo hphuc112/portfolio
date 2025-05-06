@@ -1,0 +1,46 @@
+/* components/buttons.css - Button styles */
+
+.btn {
+  display: inline-block;
+  min-width: 100px;
+  height: 50px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-medium);
+  line-height: 30px;
+  box-shadow: 3px 3px 3px rgba(26, 25, 25, 0.1);
+}
+
+.btn--primary {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn--primary:hover {
+  background-color: rgba(151, 115, 115, 0.2);
+  color: rgb(168, 152, 152);
+}
+
+.btn--secondary {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+.btn--secondary:hover {
+  background-color: rgba(151, 115, 115, 0.2);
+  color: rgb(168, 152, 152);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .btn {
+    min-width: 80px;
+    height: 40px;
+    font-size: var(--font-sm);
+    line-height: 24px;
+  }
+}
