@@ -10,8 +10,8 @@
 @import "components/project-card.css";
 
 /* Layout */
-@import "layout/container.css";
-@import "layout/footer.css";
+@import "Layout/container.css";
+@import "Layout/footer.css";
 
 /* Sections */
 @import "sections/hero.css";
