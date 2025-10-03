@@ -31,6 +31,17 @@
   box-shadow: 5px 5px 8px rgba(99, 98, 98, 0.4);
   overflow: hidden;
 }
+.project-card__image1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://raw.githubusercontent.com/hphuc112/portfolio/master/img/voice-commerce-navigator.png);
+  background-size: cover;
+  background-position: top;
+  transition: background-position 3s ease-in-out;
+}
+.project-card__image1:hover {
+  background-position: bottom;
+}
 
 .project-card__image {
   height: 100%;
