@@ -38,6 +38,7 @@
   background-color: rgba(114, 67, 67, 0.1);
   box-shadow: var(--shadow-lg);
   border-radius: var(--radius-md);
+  cursor: pointer;
 }
 
 .footer__links {
